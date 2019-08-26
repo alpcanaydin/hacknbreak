@@ -1,0 +1,11 @@
+{
+  "extends": ["@atolye15/eslint-config"],
+  "overrides": [
+    {
+      "files": ["*.stories.tsx", "*.test.tsx"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    }
+  ]
+}

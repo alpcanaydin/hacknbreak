@@ -1,0 +1,102 @@
+{
+  "name": "hacknbreak",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.2",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "buttono": "^0.5.2",
+    "classnames": "^2.2.6",
+    "normalize.css": "^8.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.11",
+    "react-scripts": "3.1.1",
+    "typescript": "3.5.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "coverage": "yarn run test -- --coverage",
+    "eject": "react-app-rewired eject",
+    "lint:eslint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:ts": "tsc && yarn lint:eslint",
+    "lint:css": "stylelint --syntax scss \"src/**/*.scss\"",
+    "lint": "yarn run lint:ts && yarn run lint:css",
+    "format:ts": "prettier --write 'src/**/*.{ts,tsx}' && yarn lint:eslint --fix",
+    "format:css": "stylelint --fix --syntax scss \"src/**/*.scss\"",
+    "format": "yarn run format:ts && yarn run format:css",
+    "format:check": "prettier -c 'src/**/*.{ts,tsx}'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@atolye15/eslint-config": "^1.0.17",
+    "@atolye15/stylelint-config": "^1.2.0",
+    "@babel/core": "^7.5.5",
+    "@hot-loader/react-dom": "^16.9.0",
+    "@storybook/addon-actions": "^5.1.11",
+    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-links": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/storybook__react": "^4.0.2",
+    "babel-loader": "^8.0.6",
+    "customize-cra": "^0.5.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "eslint": "^6.2.1",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "react-app-rewired": "^2.1.3",
+    "react-docgen-typescript-loader": "^3.1.1",
+    "react-test-renderer": "^16.9.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-prettier": "^1.1.1",
+    "svg-sprite-loader": "^4.1.6"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/index.tsx",
+      "!src/setupTests.ts",
+      "!src/utils/loadIcons.ts",
+      "!src/components/**/index.{ts,tsx}",
+      "!src/components/**/*.stories.{ts,tsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+//
+// Colors
+// --------------------------------------------------
+
+//
+// Gray Palette
+//
+
+$color-palette-gray: (
+  50: #fafafa,
+  100: #f5f5f5,
+  200: #eee,
+  300: #d5d5d5,
+  400: #bdbdbd,
+  500: #9f9f9f,
+  600: #757575,
+  700: #555,
+  800: #444,
+  900: #212121,
+);
+
+//
+// Blue Pallete
+//
+
+$color-palette-blue: (
+  500: #0089bf,
+  700: #788a96,
+  800: #3b454c,
+);
+
+$g-color-palettes: (
+  'gray': $color-palette-gray,
+  'blue': $color-palette-blue,
+);
+
+//
+// Default Colors
+//
+
+$color-white: #fff;
+$color-black: #000;
+
+//
+// Custom Colors
+//
+
+$color-porcelain: #eceff1;
+$color-supernova: #ffc500;
+$color-eucalyptus: #28a745;
+$color-cardinal: #bd2130;
+
+//
+// Project Colors
+//
+
+$primary-color: color-palette('blue', 500);
+$secondary-color: color-palette('gray', 500);
+$alert-color: $color-cardinal;
+$success-color: $color-eucalyptus;
+$warning-color: $color-supernova;
+$info-color: #a0d3e8;
+
+//
+// Project Color Configs
+//
+
+$g-body-bg: $color-porcelain !default;
+$g-text-color: color-palette('gray', 800) !default;
+$g-headings-color: inherit !default;
+$g-link-color: $primary-color !default;
+$g-link-hover-color: $primary-color !default;
+$g-border-color: color-palette('gray', 300) !default;
+$g-text-muted-color: color-palette('gray', 600) !default;
+$g-hr-border-color: $g-border-color !default;
