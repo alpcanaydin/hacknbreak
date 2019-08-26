@@ -1,5 +1,19 @@
 - What is React?
 - How react works?
+
+  - Reconciliation
+
+    - Reconciliation Engine: Fiber (https://github.com/acdlite/react-fiber-architecture)
+
+    - Diffing
+      - Elements Of Different Types
+      - DOM Elements Of The Same Type
+      - Keys
+
+  - Rendering
+    - ReactDOM
+    - Virtual DOM
+
 - CRA
 - TypeScript
 - ESLint, Prettier, Stylelint
