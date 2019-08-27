@@ -3,12 +3,12 @@ import { hot } from 'react-hot-loader/root';
 
 import './App.scss';
 
-import CounterSwitch from './components/CounterSwitch';
+import BetterCounter from './components/BetterCounter';
 
 const App: FC = () => {
   return (
     <div>
-      <CounterSwitch />
+      <BetterCounter step={3} />
     </div>
   );
 };
