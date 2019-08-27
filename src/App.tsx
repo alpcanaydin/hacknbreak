@@ -3,10 +3,12 @@ import { hot } from 'react-hot-loader/root';
 
 import './App.scss';
 
+import CounterSwitch from './components/CounterSwitch';
+
 const App: FC = () => {
   return (
     <div>
-      <h1>Hello HacknBreak</h1>
+      <CounterSwitch />
     </div>
   );
 };
